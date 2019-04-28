@@ -1,0 +1,6 @@
+/server/bin
+/server/lib
+/server/obj
+/node_modules
+/testSite/node_modules
+/testSite/dist/main.js

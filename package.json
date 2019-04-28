@@ -1,0 +1,33 @@
+{
+  "name": "mock-signalr",
+  "version": "0.1.0",
+  "description": "A simple signalR server that can be used for mocking and development.",
+  "main": "./index",
+  "bin": {
+    "mock-signalR": "index"
+  },
+  "scripts": {
+    "start-server": "dotnet run -p server -origin \"http://127.0.0.1:8080\" -hub \"test\"",
+    "build-site": "webpack --config ./testSite/webpack.config.js",
+    "serve-site": "http-server ./testSite/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanvyj/mock-signalR.git"
+  },
+  "keywords": [
+    "signalR",
+    "mock"
+  ],
+  "author": "Joe Hanvy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanvyj/mock-signalR/issues"
+  },
+  "homepage": "https://github.com/hanvyj/mock-signalR#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}

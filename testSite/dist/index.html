@@ -1,0 +1,58 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet"
+    href="https://gitcdn.link/cdn/Chalarangelo/mini.css/cf572f098f5dea455c22dba9dedc0fc11364939f/dist/mini-nord.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h1>SignalR Connection</h1>
+        <form>
+          <fieldset>
+            <div class="row center">
+              <legend>Connection</legend>
+              <span class="m-l-1" id="status"></span>
+            </div>
+            <div class="input-group fluid">
+              <label for="url">url</label>
+              <input value="" id="url" placeholder="http...">
+            </div>
+            <div class="input-group fluid">
+              <label for="hub">hub</label>
+              <input value="" id="hub" placeholder="hub">
+            </div>
+            <div class="input-group fluid">
+              <label for="method">Method</label>
+              <input value="" id="method" placeholder="method">
+            </div>
+            <button type="button" class="primary" id="connect">Connect</button>
+            <button type="button" class="primary hidden" id="disconnect">Disconnect</button>
+            <div class="card error fluid hidden" id="connect-error"></div>
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+            <legend>Simulate message</legend>
+            <div class="input-group vertical">
+              <label for="message">Message body (JSON)</label>
+              <textarea value="" id="message" placeholder="body"></textarea>
+            </div>
+            <button type="button" class="primary" id="send">Send</button>
+            <div class="card error fluid hidden" id="send-error"></div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h1>Messages</h1>
+
+        <div id="messages"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>

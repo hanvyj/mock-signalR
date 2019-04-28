@@ -1,0 +1,27 @@
+
+
+body {
+  --card-back-color: white;
+
+  padding-top: 2rem;
+}
+
+main {
+  max-width: 1200px;
+}
+
+textarea {
+  resize: vertical;
+}
+/* 
+.card {
+  background: white
+} */
+
+.center {
+    align-items: center;
+}
+
+.m-l-1 {
+  padding-left: 1rem
+}
