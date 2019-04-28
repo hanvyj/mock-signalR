@@ -1,6 +1,6 @@
 {
   "name": "mock-signalr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple signalR server that can be used for mocking and development.",
   "main": "./index",
   "bin": {
